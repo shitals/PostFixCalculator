@@ -32,7 +32,7 @@ public class ReversePlishCalculator {
 
 	public void isValidExpr() throws InvalidExpressionException {
 		if(isEmpty(expr) || expr.trim().split(" ").length<3 ||!containsValidOperator(expr) || !containsOperandAtLastIndex(expr))
-			throw new InvalidExpressionException();
+			throw new InvalidExpressionException("Invalid expression");
 	}
 	
 	
